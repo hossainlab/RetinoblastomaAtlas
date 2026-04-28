@@ -1,0 +1,26 @@
+[workspace]
+authors = ["Jubayer Hossain <hossainmj@tutamail.com>"]
+channels = ["conda-forge", "bioconda"]
+name = "RetinoblastomaAtlas"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+scanpy = ">=1.12.1,<2"
+anndata = ">=0.12.11,<0.13"
+scvi-tools = ">=1.4.2,<2"
+scvelo = ">=0.3.4,<0.4"
+squidpy = ">=1.8.1,<2"
+muon = ">=0.1.7,<0.2"
+decoupler = ">=1.5.0,<2"
+cellrank = ">=2.2.0,<3"
+pertpy = ">=1.0.6,<2"
+snapatac2 = ">=2.9.0,<3"
+leidenalg = ">=0.11.0,<0.12"
+python-igraph = ">=1.0.0,<2"
+jupyterlab = ">=4.5.6,<5"
+matplotlib = ">=3.10.9,<4"
+seaborn = ">=0.13.2,<0.14"
+scrublet = ">=0.2.3,<0.3"
