@@ -1,7 +1,6 @@
 # Research Plan: A Harmonized Single-Cell Atlas of Retinoblastoma Local Extension
 
 **Project:** RetinoblastomaAtlas
-**Version:** 1.0 — April 2026
 **Data sources:** GSE168434 (~70,000 cells), GSE249995 (~30,000 cells)
 
 > **Attribution:** All cited articles were retrieved from PubMed
