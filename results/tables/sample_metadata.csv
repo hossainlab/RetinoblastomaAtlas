@@ -1,0 +1,15 @@
+sample_id,dataset,patient_id,disease_stage,tissue,replicate,n_cells
+GSM5139852_RB01_rep1,GSE168434,RB01,intraocular,primary_tumour,rep1,6990
+GSM5139853_RB01_rep2,GSE168434,RB01,intraocular,primary_tumour,rep2,6826
+GSM5139854_RB02_rep1,GSE168434,RB02,intraocular,primary_tumour,rep1,4185
+GSM5139855_RB02_rep2,GSE168434,RB02,intraocular,primary_tumour,rep2,2140
+GSM5139856_RB03_rep1,GSE168434,RB03,intraocular,primary_tumour,rep1,7596
+GSM5139857_RB03_rep2,GSE168434,RB03,intraocular,primary_tumour,rep2,7638
+GSM5139858_RB04,GSE168434,RB04,intraocular,primary_tumour,rep1,14093
+GSM5139859_RB05,GSE168434,RB05,intraocular,primary_tumour,rep1,13016
+GSM5139860_RB06,GSE168434,RB06,intraocular,primary_tumour,rep1,14407
+GSM5139861_RB07,GSE168434,RB07,intraocular,primary_tumour,rep1,14681
+S1_in1,GSE249995,P1,intraocular,primary_tumour,rep1,10453
+S2_in2,GSE249995,P2,intraocular,primary_tumour,rep1,15386
+S3_ex1,GSE249995,P1,extraocular,optic_nerve,rep1,11099
+S4_ex2,GSE249995,P2,extraocular,optic_nerve,rep1,13370
