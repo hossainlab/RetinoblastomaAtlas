@@ -1,0 +1,50 @@
+---
+title: "Integrated Single-Cell Transcriptomic Atlas of Retinoblastoma"
+format:
+  nature-pdf:
+    journal:
+      cite-style: sn-nature
+    cite-method: natbib
+    keep-tex: true
+    equal-margins: false
+author:
+  - name: Md. Jubayer Hossain
+    affiliations:
+      - name: Big Bioinformatics Lab
+        id: 1
+    email: contact.jubayerhossain@gmail.com
+    attributes:
+      corresponding: true
+abstract: |
+  Retinoblastoma is the most common intraocular malignancy in children. This study presents a comprehensive single-cell RNA sequencing (scRNA-seq) atlas by integrating datasets from multiple sources (GSE168434 and GSE249995). We describe the quality control, doublet detection, and integration strategies used to build this atlas, providing insights into the cellular heterogeneity and developmental trajectories of the tumor.
+keywords: [Retinoblastoma, scRNA-seq, Harmony, DoubletFinder, Seurat]
+bibliography: bibliography.bib  
+---
+
+# Introduction {#sec-intro}
+
+Retinoblastoma (RB) arises from the developing retina... (draft intro here)
+
+# Methods {#sec-methods}
+
+## Data Acquisition and Preprocessing
+Single-cell RNA sequencing (scRNA-seq) data were obtained from the Gene Expression Omnibus (GEO) under accession numbers GSE168434 and GSE249995. Raw count matrices were processed using the Seurat v5 R package [@seurat]. For each sample, we performed initial quality control by excluding cells with fewer than 300 detected genes, more than 7,500 detected genes, or a mitochondrial gene proportion exceeding 20%. 
+
+## Doublet Detection and Removal
+To identify and remove potential doublets, we employed DoubletFinder [@doubletfinder]. For each sample, the optimal neighborhood size (pK) was determined through a parameter sweep by maximizing the bimodality coefficient. Artificial doublets were generated at a rate of 7.5%, and a homotypic doublet proportion was estimated based on initial clustering within each sample. Cells identified as doublets were subsequently removed from further analysis to ensure the integrity of cell type identification and downstream developmental modeling.
+
+## Data Integration and Dimensionality Reduction
+Individual sample objects were merged and integrated using Harmony [@harmony] to correct for technical batch effects and inter-individual variation while preserving biological heterogeneity. Integrated data were scaled, and the top 2,000 highly variable features were used for Principal Component Analysis (PCA). Dimensionality reduction was performed using Uniform Manifold Approximation and Projection (UMAP) for visualization.
+
+## Pathway and Transcription Factor Activity Scoring
+Pathway activities were inferred using PROGENy [@progeny], and transcription factor (TF) activities were estimated using DoRothEA [@dorothea]. Activity scores were calculated using the decoupleR framework [@decoupler].
+
+## Cell-Cell Communication Analysis
+Ligand-receptor interactions and global signaling patterns were analyzed using CellChat [@cellchat]. Comparative analysis was performed between different disease stages and tissue types to identify differential communication networks in the tumor microenvironment.
+
+## Trajectory Inference and Pseudotime Analysis
+Lineage trajectories and pseudotime were reconstructed using Slingshot [@slingshot]. This allowed for the characterization of developmental transitions from retinal progenitor cells to neoplastic states.
+
+# Results {#sec-results}
+
+# Discussion {#sec-discussion}

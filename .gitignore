@@ -1,5 +1,57 @@
-# Ignore data 
+# Ignore data directories
 data/
+results/figures/
+results/tables/
+
+# R data files
+*.RData
+*.rds
+*.rda
+*.Rhistory
+
+# AnnData / HDF5
+*.h5ad
+*.h5
+*.hdf5
+*.loom
+
+# 10x Genomics
+*.mtx
+*.mtx.gz
+barcodes.tsv*
+features.tsv*
+genes.tsv*
+
+# Genomics / sequencing
+*.bam
+*.bai
+*.sam
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.vcf
+*.vcf.gz
+*.bcf
+*.bed
+*.bedgraph
+*.bigwig
+*.bw
+*.bigbed
+
+# Lock files
+*.lock
+pixi.lock
+uv.lock
+
+# Binary outputs
+*.pdf
+*.png
+*.eps
+*.svg
+*.tiff
+*.tif
+*.jpg
+*.jpeg
 
 # Ignore .claude
 .claude/
@@ -225,6 +277,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+.Rproj.user
+.positai
 # pixi environments
 .pixi/*
 !.pixi/config.toml
